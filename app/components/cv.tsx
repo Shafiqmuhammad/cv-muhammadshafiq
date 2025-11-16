@@ -381,7 +381,7 @@ function Cv() {
                 course delivery, student tracking, and AI-assisted grading automation.
               </p>
               <a
-                href="https://university-lms-portal.vercel.app/"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-all duration-300"
