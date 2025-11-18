@@ -392,13 +392,21 @@ function Cv() {
             </div>
 
             <div className="project-card">
+
+              <h3 className="text-lg font-bold text-white mb-2">Hospital Management System</h3>
+              <p className="text-slate-300 text-sm mb-3">
+                A Next.js + Supabase powered platform for patient record management, appointment
+                scheduling, staff coordination, and efficient hospital operations.
+              </p>
+
+              {/*
               <h3 className="text-lg font-bold text-white mb-2">H1B Visa for companies Portal</h3>
               <p className="text-slate-300 text-sm mb-3">
                 A Next.js + Supabase based Learning Management System for digital
                 course delivery, student tracking, and AI-assisted grading automation.
-              </p>
+              </p> */}
               <a
-                href=""
+                href="https://hospital-mgmt-system-orcin.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-all duration-300"
