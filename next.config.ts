@@ -10,15 +10,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["api.qrserver.com", "muhammad-shafiq00786.vercel.app"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "api.qrserver.com"
-      }
+        hostname: "api.qrserver.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cv-muhammadshafiq.vercel.app",
+        pathname: "/**",
+      },
     ],
   },
   reactStrictMode: true,
 };
 
 module.exports = nextConfig;
+
