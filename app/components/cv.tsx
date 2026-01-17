@@ -591,7 +591,7 @@ function Cv() {
           variants={itemVariants}
           className="glass-card rounded-3xl p-8 md:p-12 mb-8 relative overflow-hidden"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-blue-500/5 pointer-events-none" />
+          <div className="absolute inset-0 bg-linear-to-br from-cyan-500/5 via-transparent to-blue-500/5 pointer-events-none" />
 
           <div className="relative z-10">
             <motion.div
