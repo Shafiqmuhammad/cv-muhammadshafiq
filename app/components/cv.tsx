@@ -643,7 +643,7 @@ function Cv() {
               </a>
 
               <a
-                href="https://muhammad-shafiq00786.vercel.app/"
+                href="https://cv-muhammadshafiq.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-link"
@@ -673,7 +673,7 @@ function Cv() {
         {/* SUMMARY + TARGET ROLE */}
         <div className="grid md:grid-cols-2 gap-6">
           <motion.div variants={itemVariants} className="glass-card rounded-2xl p-6 hover-lift">
-            <h2 className="section-title">Professional Summary (Level-4)</h2>
+            <h2 className="section-title">Professional Summary</h2>
             <p className="text-slate-300 leading-relaxed">
               Senior Full-Stack Engineer specializing in architecture-level delivery of AI-driven web
               systems. Experienced in designing secure APIs, scaling backend services, and deploying
@@ -929,7 +929,7 @@ function Cv() {
           <div className="flex flex-col items-center gap-4">
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-300">
               <a
-                href="https://muhammad-shafiq00786.vercel.app/"
+                href="https://cv-muhammadshafiq.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-link"
@@ -950,7 +950,7 @@ function Cv() {
 
             <div className="glass-card p-4 rounded-xl bg-white/5">
               <QRCodeCanvas
-                value="https://muhammad-shafiq00786.vercel.app/"
+                value="https://cv-muhammadshafiq.vercel.app/"
                 size={120}
                 bgColor="transparent"
                 fgColor="#22d3ee"
