@@ -1,14 +1,31 @@
-// import type { NextConfig } from "next";
 
-// const nextConfig: NextConfig = {
-//   /* config options here */
+
+
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   images: {
+//     remotePatterns: [
+//       {
+//         protocol: "https",
+//         hostname: "api.qrserver.com",
+//         pathname: "/**",
+//       },
+//       {
+//         protocol: "https",
+//         hostname: "cv-muhammadshafiq.vercel.app",
+//         pathname: "/**",
+//       },
+//     ],
+//   },
+//   reactStrictMode: true,
 // };
 
-// export default nextConfig;
+// module.exports = nextConfig;
 
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  devIndicators: false,   // ← add this line
   images: {
     remotePatterns: [
       {
@@ -27,4 +44,3 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
-
