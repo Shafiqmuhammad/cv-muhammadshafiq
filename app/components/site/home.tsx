@@ -6,11 +6,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   ArrowRight, Bot, Server, LayoutDashboard, Cloud, ExternalLink, Check,
-  Award, ChevronDown, Mail, Linkedin, Github, MapPin, AlertTriangle,
+  Award, ChevronDown, GraduationCap, Mail, Linkedin, Github, MapPin, AlertTriangle,
 } from "lucide-react";
 import {
   profile, problems, capabilities, projects, skillGroups, services,
-  experience, credentials, faqs,
+  experience, credentials, education, faqs,
 } from "../../data/portfolio";
 import { Reveal, Section, SectionHeader, Tag } from "./ui";
 
@@ -233,22 +233,49 @@ function Experience() {
 
 function Credentials() {
   return (
-    <Section className="bg-slate-950/40">
-      <SectionHeader eyebrow="Credentials" title="Certifications and education behind the work." />
-      <div className="grid gap-5 sm:grid-cols-2">
+    <Section id="credentials" className="bg-slate-950/40">
+      <SectionHeader
+        eyebrow="Credentials"
+        title="Certifications and education behind the work."
+        text="Certificates support the work — the projects above show how I apply it."
+      />
+      <div className="grid gap-6 md:grid-cols-3">
         {credentials.map((c, i) => (
-          <Reveal key={c.title} delay={i * 0.06}>
-            <div className="experience-item flex h-full gap-4">
-              <Award className="h-8 w-8 shrink-0 text-cyan-400" />
-              <div>
-                <h3 className="font-semibold text-white">{c.title}</h3>
-                <p className="text-sm text-cyan-300">{c.issuer}{c.date && ` · ${c.date}`}</p>
-                <p className="mt-2 text-sm text-slate-400">{c.text}</p>
+          <Reveal key={c.title} delay={i * 0.08}>
+            <article className="glass-card hover-lift flex h-full flex-col overflow-hidden rounded-2xl">
+              <a href={c.file} target="_blank" rel="noreferrer" className="relative block aspect-[1.41/1] bg-white" aria-label={`Open ${c.title} certificate`}>
+                <Image src={c.image} alt={`${c.title} certificate`} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-contain" />
+              </a>
+              <div className="flex flex-1 flex-col p-6">
+                <div className="flex items-start gap-3">
+                  <Award className="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" />
+                  <h3 className="font-semibold leading-snug text-white">{c.title}</h3>
+                </div>
+                <p className="mt-2 text-sm text-cyan-300">{c.issuer}</p>
+                {(c.date || c.certNo) && (
+                  <p className="mt-1 text-xs text-slate-500">
+                    {c.date}{c.date && c.certNo && " · "}{c.certNo && `Cert No. ${c.certNo}`}
+                  </p>
+                )}
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-400">{c.text}</p>
+                <a href={c.file} target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-cyan-400 hover:text-cyan-300">
+                  View Certificate <ExternalLink className="h-4 w-4" />
+                </a>
               </div>
-            </div>
+            </article>
           </Reveal>
         ))}
       </div>
+      <Reveal>
+        <div className="experience-item mt-6 flex gap-4">
+          <GraduationCap className="h-8 w-8 shrink-0 text-cyan-400" />
+          <div>
+            <h3 className="font-semibold text-white">{education.title}</h3>
+            <p className="text-sm text-cyan-300">{education.school}</p>
+            <p className="mt-2 text-sm text-slate-400">{education.text}</p>
+          </div>
+        </div>
+      </Reveal>
     </Section>
   );
 }

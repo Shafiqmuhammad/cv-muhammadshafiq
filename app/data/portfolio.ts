@@ -32,6 +32,7 @@ export const navLinks = [
   { label: "Projects", href: "/#projects" },
   { label: "Skills", href: "/#skills" },
   { label: "Experience", href: "/#experience" },
+  { label: "Certificates", href: "/#credentials" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -196,30 +197,39 @@ export const experience = [
 
 export const credentials = [
   {
-    title: "Agentic AI Developer — Professional Level 2",
-    issuer: "PIAIC",
-    date: "Jan 2026",
-    text: "Advanced agent development: multi-agent systems, tool use, and deployment.",
+    title: "Agentic AI Professional Level 2 Developer",
+    issuer: "PIAIC — Presidential Initiative for AI & Computing",
+    date: "January 30, 2026",
+    certNo: "2026030100415",
+    text: "Advanced agent development: multi-agent systems, tool use, and production deployment.",
+    image: "/certificates/piaic-agentic-ai-level-2.png",
+    file: "/certificates/piaic-agentic-ai-level-2.pdf",
   },
   {
-    title: "Agentic AI Developer — Level 1",
-    issuer: "PIAIC",
-    date: "Jan 2026",
-    text: "Foundations of LLMs, agent frameworks, and AI-native development.",
+    title: "Agentic AI Level 1 Developer",
+    issuer: "PIAIC — Presidential Initiative for AI & Computing",
+    date: "January 30, 2026",
+    certNo: "2026010100415",
+    text: "Foundations of LLMs, agent frameworks, and AI-native software development.",
+    image: "/certificates/piaic-agentic-ai-level-1.png",
+    file: "/certificates/piaic-agentic-ai-level-1.pdf",
   },
   {
     title: "AI Fluency for Educators",
     issuer: "Anthropic",
     date: "",
-    text: "Effective, responsible, and ethical collaboration with AI systems.",
-  },
-  {
-    title: "BS in Computer Science (in progress)",
-    issuer: "University of the People",
-    date: "",
-    text: "Coursework in AI-native software, agentic AI, generative AI, ML foundations, and data analytics.",
+    certNo: "",
+    text: "Effective, responsible, and ethical collaboration with AI systems like Claude.",
+    image: "/certificates/ai-fluency-educators.png",
+    file: "/certificates/ai-fluency-educators.pdf",
   },
 ];
+
+export const education = {
+  title: "BS in Computer Science (in progress)",
+  school: "University of the People",
+  text: "Coursework in AI-native software development, agentic AI systems, generative AI, machine learning foundations, data analytics, and Python.",
+};
 
 export const faqs = [
   {
